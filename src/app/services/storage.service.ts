@@ -22,7 +22,7 @@ export class StorageService {
     return false;
   }
 
-  clear(key:string):void{
-    localStorage.setItem(key, "");
+  clear(key:string){
+    localStorage.removeItem(key);
   }
 }
