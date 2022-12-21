@@ -36,9 +36,9 @@ constructor(private loginService: LoginService, private storageService: StorageS
           this.storageService.save('USERNAME', response.username);
           this.storageService.save('PHOTO_PROFILE', response.image)
           if(this.lastUrl){
-            this.router.navigate(['this.lastUrl']);
+            this.router.navigate([this.lastUrl]);
           }else{
-            this.router.navigate(['this.defaultUrl'])
+            this.router.navigate([this.defaultUrl])
           }
         }
       )
