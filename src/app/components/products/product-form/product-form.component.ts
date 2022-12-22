@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IProduct } from 'src/app/interfaces/i-product';
-import { ProductService } from 'src/app/service/product.service';
+import { ProductService } from 'src/app/services/product.service';
 import { ToasterService } from 'src/app/services/toaster.service';
 
 @Component({
@@ -64,6 +64,7 @@ export class ProductFormComponent implements OnInit{
       (response: IProduct) => {
         this.showMore = false;
         this.product = {} as IProduct;
+        this.isConfirmDelete = false;
         this.toasterService.showToast = true;
         this.toasterService.message = `Berhasil delete data dengan ID: ${response.id}`;
       }

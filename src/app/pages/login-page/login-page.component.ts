@@ -67,6 +67,7 @@ constructor(private loginService: LoginService, private storageService: StorageS
         },
         (error:any) =>{
           this.toasterService.showToast = true;
+          this.toasterService.condition = false;
           this.toasterService.message = 'Login gagal, silahkan coba kembali!';
         }
       )

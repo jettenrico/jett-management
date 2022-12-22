@@ -13,6 +13,8 @@ import { ProductListComponent } from './pages/product-list/product-list.componen
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { ProductFormComponent } from './components/products/product-form/product-form.component';
 import { ToasterComponent } from './components/toaster/toaster/toaster.component';
+import { UserFormComponent } from './components/users/user-form/user-form.component';
+import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { ToasterComponent } from './components/toaster/toaster/toaster.component
     ProductListComponent,
     ProductDetailComponent,
     ProductFormComponent,
-    ToasterComponent
+    ToasterComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { ToasterComponent } from './components/toaster/toaster/toaster.component
     FormsModule,
     NgbModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

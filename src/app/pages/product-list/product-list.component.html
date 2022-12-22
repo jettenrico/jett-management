@@ -51,7 +51,7 @@
             </div>
             <div *ngIf="products.length > 0" class="card">
                 <h5 class="card-header">List Products</h5>
-                <table class="table table-striped">
+                <table class="table table-striped" datatable [dtOptions]="dtOptions">
                     <thead>
                         <tr>
                             <th>Title</th>

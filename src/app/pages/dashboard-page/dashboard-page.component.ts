@@ -15,7 +15,7 @@ export class DashboardPageComponent {
     {
       "title": "User Management",
       "image": "https://picsum.photos/200/90?random=3",
-      "link": ""
+      "link": "/user"
     },
     {
       "title": "Sales Management",

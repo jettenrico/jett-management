@@ -1,1 +1,37 @@
-<p>user-page works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <app-user-form *ngIf="user" [user]="user" ></app-user-form>
+        </div>
+        <div class="col-md-8">
+            <div *ngIf="users.length === 0" class="card">
+                <h5 class="card-header">Users</h5>
+                <div class="card-body">
+                    <h5 class="card-title">User belom pada daftar brodi</h5>
+                    <p class="card-text">Tambah user dulu di form sebelah broks</p>
+                </div>
+            </div>
+            <div *ngIf="users.length > 0" class="card">
+                <h5 class="card-header">List Users</h5>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Age</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let u of users" (click)="showDetailUser(u)" >
+                            <td>{{u.firstName}} {{u.lastName}}</td>
+                            <td>{{u.age}}</td>
+                            <td>{{u.email}}</td>
+                            <td>{{u.phone}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
