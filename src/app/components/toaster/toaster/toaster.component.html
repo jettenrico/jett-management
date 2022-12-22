@@ -1,5 +1,11 @@
 <ngb-toast style="position: fixed; z-index: 9999; right: 30px; top: 30px;"
-*ngIf="toast.showToast" header="Success!"
+*ngIf="toast.showToast && toast.condition === true" header="Success!"
+[autohide]="false"
+(hidden)="toast.showToast = false">
+{{toast.message}}
+</ngb-toast>
+<ngb-toast style="position: fixed; z-index: 9999; right: 30px; top: 30px;"
+*ngIf="toast.showToast && toast.condition === false" header="Error!"
 [autohide]="false"
 (hidden)="toast.showToast = false">
 {{toast.message}}

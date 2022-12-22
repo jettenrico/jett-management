@@ -1,8 +1,12 @@
 <nav class="navbar bg-dark navbar-dark mb-4">
     <div class="container-fluid">
-        <a href="#" class="navbar-brand">
-            <img src="assets/images/ETH.svg" alt="logo" width="35" height="35" class="d-inline-block align-text-top">
+        <a href="#" class="navbar-brand ms-4">
+            <img src="assets/images/ETH.svg" alt="logo" width="35" height="35" class="d-inline-block align-text-top" >
+        &nbsp;
         JEC App
         </a>
+        <div class="d-flex me-4" *ngIf="isLoggedIn()">
+            <button class="btn btn-outline-light" (click)="onLogout()" >Logout</button>
+        </div>
     </div>
 </nav>
