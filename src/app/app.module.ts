@@ -15,6 +15,8 @@ import { ProductFormComponent } from './components/products/product-form/product
 import { ToasterComponent } from './components/toaster/toaster/toaster.component';
 import { UserFormComponent } from './components/users/user-form/user-form.component';
 import { DataTablesModule } from 'angular-datatables';
+import { QRCodeModule } from 'angular2-qrcode';
+import { QrgenPageComponent } from './pages/qrgen-page/qrgen-page.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { DataTablesModule } from 'angular-datatables';
     ProductDetailComponent,
     ProductFormComponent,
     ToasterComponent,
-    UserFormComponent
+    UserFormComponent,
+    QrgenPageComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { DataTablesModule } from 'angular-datatables';
     NgbModule,
     HttpClientModule,
     ReactiveFormsModule,
-    DataTablesModule
+    DataTablesModule,
+    QRCodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

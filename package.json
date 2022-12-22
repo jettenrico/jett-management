@@ -21,6 +21,7 @@
     "@ng-bootstrap/ng-bootstrap": "^14.0.0",
     "@popperjs/core": "^2.11.6",
     "angular-datatables": "^14.0.2",
+    "angular2-qrcode": "^2.0.3",
     "bootstrap": "^5.2.3",
     "datatables.net": "^1.11.3",
     "datatables.net-bs": "^1.11.3",
